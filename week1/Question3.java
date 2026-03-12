@@ -1,5 +1,7 @@
 package week1;
-public class question3 {
+
+public class Question3 {
+
     static class Node {
         int data;
         Node next;
@@ -47,17 +49,10 @@ public class question3 {
         head.next.next = new Node(30);
         head.next.next.next = new Node(40);
 
-        System.out.println("Original Linked List:");
-        printList(head);
-
-        int keyToDelete = 30;
-        head = deleteNode(head, keyToDelete);
-
-        System.out.println("\nLinked List after deleting " + keyToDelete + ":");
+        head = deleteNode(head, 30);
         printList(head);
 
         head = deleteNode(head, 10);
-        System.out.println("\nLinked List after deleting the head (10):");
         printList(head);
     }
 }
